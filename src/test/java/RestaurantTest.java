@@ -82,4 +82,12 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void  calculate_order_value_from_items_added_in_list() {
+        restaurant.addToMenu("Sweet corn soup",100);
+        restaurant.addToMenu("Vegetable lasagne", 250);
+        restaurant.addToMenu("Chicken Momo", 200);
+        Double amount = restaurant.calculateOrderValue();
+    }
 }
