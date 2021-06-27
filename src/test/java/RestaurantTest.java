@@ -88,6 +88,7 @@ class RestaurantTest {
         restaurant.addToMenu("Sweet corn soup",100);
         restaurant.addToMenu("Vegetable lasagne", 250);
         restaurant.addToMenu("Chicken Momo", 200);
-        Double amount = restaurant.calculateOrderValue();
+        int amount = restaurant.calculateOrderValue();
+        assertEquals(550, amount);
     }
 }

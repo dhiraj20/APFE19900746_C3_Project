@@ -67,4 +67,12 @@ public class Restaurant {
         return name;
     }
 
+    public int calculateOrderValue() {
+        int totalValue = 0;
+        for(Item item: menu) {
+            totalValue = totalValue + item.getPrice();
+        }
+        return totalValue;
+    }
 }
+
